@@ -1,3 +1,10 @@
+function getRightCoord() {
+  var ridgtCoord = $("#right_coord").offset().left;
+  $("#imgBox").css({
+    "width" : ridgtCoord + "px"
+  });
+}
+
 var w = window,
 d = document,
 e = d.documentElement,
@@ -7,13 +14,13 @@ bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
 $(window).load(function() {
 
-
+getRightCoord();
 
 });
 
 $(window).resize(function() {
 
-
+getRightCoord();
 
 });
 
@@ -52,6 +59,36 @@ $(document).ready(function() {
             //     }
             //   ]
         });
+    }
+
+    if( $(".benefits_slider").length > 0 ) {
+      $(".benefits_slider").not(".slick-initialized").slick({
+          dots: true,
+          arrows: false,
+          // autoplay: true,
+          autoplaySpeed: 4000,
+          speed: 1200,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          fade: true,
+          appendDots: $(".benefits_slider_controls")
+          // responsive: [
+          //     {
+          //       breakpoint: 900,
+          //       settings: {
+          //         slidesToShow: 2,
+          //         slidesToScroll: 2
+          //       }
+          //     },
+          //     {
+          //       breakpoint: 540,
+          //       settings: {
+          //         slidesToShow: 1,
+          //         slidesToScroll: 1
+          //       }
+          //     }
+          //   ]
+      });
     }
 
     $( ".thumb_2" ).bind({

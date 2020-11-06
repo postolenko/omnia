@@ -1,3 +1,351 @@
+@media only screen and (max-width: 1600px) {
+
+	h1 {
+	    font-size: 100px;
+	    line-height: 120px;
+	}
+
+	h2 {
+	    font-size: 64px;
+	    line-height: 89px;
+	}
+
+	p {
+	    font-size: 20px;
+	    line-height: 32px;
+	}
+
+	.row {
+		padding: 0 50px;
+	}
+
+/*-- Header --*/
+
+	.header_site {
+	    padding: 22px 0 5px 0;
+	}
+
+/*-- /Header --*/
+
+/*-- Section 1 --*/
+
+	.promo {
+    	padding: 20px 0 30px 0;
+	}
+
+	.promo_descript h1 {
+	    padding-bottom: 42px;
+	}
+
+	.promo_descript {
+	    max-width: 800px;
+	    padding: 39px 0 1px 77px;
+	}
+
+	.promo_descript:before {
+	    width: 110%;
+	    height: 100%;
+	    left: -3px;
+	}
+
+	.promo_descript p {
+	    font-size: 20px;
+	    line-height: 32px;
+	}
+
+/*-- /Section 1 --*/
+
+/*-- Section 2 --*/
+
+	.article .left {
+	    width: 525px;
+	}
+
+	.article .right {
+	    /*width: calc(100% - 525px);*/
+	    width: 720px;
+	    padding-left: 80px;
+	}
+
+	.h2_wrapp_2_title:after {
+	    margin-top: 48px;
+	}
+
+	.h2_wrapp_2_title h2 {
+	    padding-right: 29px;
+	}
+
+	.h2_wrapp_descript {
+	    max-width: 585px;
+	}
+
+	.thumb_1 .title_wrapp h3 {
+	    padding-bottom: 25px;
+	    font-size: 26px;
+	    line-height: 28px;
+	}
+
+	.thumb_1 .title_wrapp:after {
+	    height: 14px;
+	    bottom: 23px;
+	}
+
+	.img_box_2 {
+	    width: calc(50% - 251px);
+	    height: 574px;
+	    padding: 0 35px 35px 0;
+	}
+
+	.img_bg_inner_2 {
+	    height: 540px;
+	}
+
+	.img_bg_2:before {
+	    width: calc(100% - 70px);
+	    height: calc(100% - 60px);
+	    top: 22px;
+	    left: 25px;
+	}
+
+	.img_bg_2:after {
+	    width: calc(100% - 45px);
+	    height: calc(100% - 38px);
+	    top: 22px;
+	    left: 26px;
+	}
+
+/*-- /Section 2 --*/
+
+/*-- Section 3 --*/
+
+.article_2_wrapp {
+    margin: 5px 0;
+}
+
+.h2_wrapp_descript_2 {
+    padding: 24px 0 0 0;
+}
+
+.items_2 {
+    margin: 49px -10px;
+}
+
+.item_2 {
+    padding: 5px 30px;
+}
+
+.white_bg {
+    left: -23px;
+ }
+
+.benefits_slider_wrapp:before {
+    width: calc(100% - 28px);
+    height: calc(100% - 41px);
+    top: 25px;
+    left: -4px;
+}
+
+.benefits_slider_wrapp:after {
+	width: calc(100% - 7px);
+    height: calc(100% - 16px);
+    top: 25px;
+    left: -26px;
+}
+
+.benefits_slider_controls .slick-dots {
+	text-align: left;
+}
+
+.benefits_slider_controls {
+    bottom: 22px;
+    left: 25px;
+}
+
+.slick-dots li button {
+    width: 44px;
+}
+
+/*-- /Section 3 --*/
+
+/*-- Section 4 --*/
+
+.sect_4 {
+    padding: 78px 0 62px 0;
+}
+
+.thumb_2 {
+    height: 285px;
+}
+
+.thumb_2 .descript {
+    padding: 10px 20px 13px 20px;
+}
+
+/*-- /Section 4 --*/
+
+/*-- Section 5 --*/
+
+.sect_5 {
+    padding: 124px 0 12px 0;
+}
+
+.reviews_title {
+    margin: 55px -14px 22px -14px;
+}
+
+.testimonial_descript p {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+/*-- /Section 5 --*/
+
+/*-- Section 6 --*/
+
+.sect_6 {
+    padding: 121px 0 115px 0;
+}
+
+.h2_wrapp_3 h2 {
+    padding: 0 30px;
+    font-size: 64px;
+    line-height: 87px;
+}
+
+.h2_wrapp_3 > div:before {
+    margin-top: -1px;
+}
+
+.h2_wrapp_3 > div:after {
+    margin-top: -1px;
+}
+
+.h2_wrapp_3 p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.thumb_table {
+    padding: 26px 0 13px 0;
+}
+
+.cherry_bg {
+    background-size: 620px;
+}
+
+.prices_thumbnails {
+    margin: 50px -10px 28px -10px;
+}
+
+.price_thumb {
+	padding: 23px 25px 25px 25px;
+}
+
+.price_val_wrapp {
+    padding: 13px 0 11px 0;
+}
+
+.thumb_two_cols > div {
+    padding: 1px;
+}
+
+.thumb_two_cols p {
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.price_thumb_big {
+    padding: 28px 34px 17px 34px;
+}
+
+.price_thumb_big_title {
+    padding: 0 0 23px 0;
+}
+
+.price_thumb_big_title h3 {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.price_thumb_big_footer {
+    padding-top: 12px;
+}
+
+.price_thumb_big_footer .brown_pill {
+    padding: 10px;
+}
+
+/*-- /Section 6 --*/
+
+/*-- Section 7 --*/
+
+.contacts_article {
+    margin: 85px 0 60px 0;
+}
+
+.img_box_2 {
+	width: calc(50% - 76px);
+    height: 591px;
+    margin-top: 16px;
+    padding: 0 30px 30px 0;
+}
+
+.img_bg_inner_2 {
+    height: 590px;
+}
+
+.img_bg_2:before {
+    width: calc(100% - 65px);
+    height: calc(100% - 30px);
+    top: 25px;
+    left: 25px;
+}
+
+.img_bg_2:after {
+    width: calc(100% - 45px);
+    height: calc(100% - 5px);
+    top: 25px;
+    left: 26px;
+}
+
+.title_wrapp_2 h2 {
+	padding: 0 0 25px 0;
+    font-size: 52px;
+    line-height: 62px;
+}
+
+.title_wrapp_2 p {
+    padding: 17px 0;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+/*-- /Section 7 --*/
+
+/*-- Footer --*/
+
+.footer_title {
+    padding: 10px 0 18px 0;
+}
+
+.footer_title h2 {
+    font-size: 54px;
+    line-height: 70px;
+}
+
+.footer_title h2:before {
+    bottom: 11px;
+}
+
+.socials_list {
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+/*-- /Footer --*/
+
+}
+
 @media only screen and (max-width: 1240px) {
 
 
