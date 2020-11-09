@@ -1863,10 +1863,6 @@ textarea:focus {
     text-align: center;
 }
 
-.price_thumb_title {
-
-}
-
 .price_thumb_title h4 {
     padding: 4px 0;
     font-family: "Acumin Pro";
@@ -1945,8 +1941,7 @@ textarea:focus {
 .price_thumb_big {
     height: 100%;
     width: 100%;
-    background-color: #EDE4DF;    
-    /*margin: 10px;*/
+    background-color: #EDE4DF;
     padding: 52px 34px 40px 34px;
     text-align: center;
 }
@@ -2009,10 +2004,6 @@ textarea:focus {
     text-align: right;
 }
 
-.thumb_table .table_row .cell p {
-
-}
-
 .thumb_table p {
     font-weight: normal;
     font-size: 20px;
@@ -2065,10 +2056,6 @@ p.main_price_val:before {
 p.main_price_val span {
     position: relative;
     z-index: 2;
-}
-
-.price_thumb_big_footer {
-
 }
 
 .price_thumb_big_footer .brown_pill {
@@ -2234,14 +2221,6 @@ p.main_price_val span {
     color: #584A45;
 }
 
-.submit_wrapp {
-
-}
-
-.brown_pill_3 {
-
-}
-
 .submit_wrapp .brown_pill_3 {
     margin: 15px 0;
     min-width: 100%;
@@ -2323,10 +2302,6 @@ footer {
     justify-content: flex-end;
     -webkit-justify-content: flex-end;
     width: 11%;
-}
-
-.contacts_list_white {
-
 }
 
 .contacts_list_white li,
