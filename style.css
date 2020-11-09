@@ -517,20 +517,6 @@ textarea:focus {
     text-transform: uppercase;
     color: #584A45;
 }
-/*
-.main_nav li a:link,
-.main_nav li a:visited {
-    border-bottom: 1px solid transparent;
-}
-
-.main_nav li a:active,
-.main_nav li a.active {
-    border-bottom: 1px solid #466896;
-}
-
-.main_nav li a:hover {
-    border-bottom: 1px solid #466896;
-}*/
 
 .main_nav li a span {
     padding: 0 1px;
@@ -1515,6 +1501,8 @@ textarea:focus {
     width: 14px;
     height: 17px;
     background-image: url(img/map_mark_2.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .icon_p p {
