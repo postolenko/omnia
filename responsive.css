@@ -1501,6 +1501,49 @@ h1 {
 
 	/*-- /Section 6 --*/
 
+	/*-- Section 7 --*/
+
+	.contacts_article {
+	    margin: 55px 0 21px 0;
+	}
+
+	.title_wrapp_2 {
+	    margin-bottom: 11px;
+	}
+
+	.img_box_2_2_row {
+	    padding: 0 15px;
+	}
+
+	.img_box_2_2_row .img_box_2 {
+	    left: 7px;
+	}
+
+	.title_wrapp_2 h2 {
+	    padding: 0 0 12px 0;
+	    font-size: 26px;
+	    line-height: 33px;
+	}
+
+	.title_wrapp_2 p {
+	    padding: 10px 0;
+	    font-size: 16px;
+	    line-height: 22px;
+	}
+
+	.submit_wrapp {
+		text-align: center;
+	}
+
+	.submit_wrapp .brown_pill_3 {
+	    margin: 5px 0;
+	    min-width: 254px;
+	    font-size: 20px;
+	    line-height: 36px;
+	}
+
+	/*-- /Section 7 --*/
+
 }
 
 
