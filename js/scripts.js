@@ -191,8 +191,10 @@ $(document).ready(function() {
 
     $(this).keydown(function(eventObject){
       if (eventObject.which == 27) {
+        if($("#respNav").hasClass("visible") && $(".resp_bg").hasClass("visible")) {
           $("#respNav").removeClass("visible");
           $(".resp_bg").removeClass("visible");
+        }
       }
     });
 
@@ -245,7 +247,7 @@ $(document).ready(function() {
         $("[data-popup]").fadeOut(300);
     });
     $(this).keydown(function(eventObject){
-        if (eventObject.which == 27 ) {
+        if (eventObject.which == 27 && $("body").hasClass("fixed")) {
             curTop = $("body").css("top");
             curTop = Math.abs(parseInt(curTop, 10));
             $("body").attr("style", "");
@@ -275,7 +277,5 @@ $(document).ready(function() {
         }
       }
     });
-
-    // -------------------
 
 });

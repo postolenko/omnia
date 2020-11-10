@@ -883,22 +883,107 @@ textarea:focus {
     max-width: 600px;
 }
 
-.brown_pill  {
+.brown_pill {
     display: inline-block;
     vertical-align: top;
+    position: relative;
     min-width: 430px;
     border: none;
     cursor: pointer;
-    padding: 15px 10px 15px 10px;
-    background-color: #8B5347;
+    padding: 15px 10px 15px 10px;    
     text-align: center;
     font-weight: bold;
     font-size: 30px;
     line-height: 36px;
     color: #FFFFFF;
+    -webkit-transition-property: color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
 }
 
+.brown_pill:link,
+.brown_pill:visited {
+    color: #FFFFFF;
+}
 
+.brown_pill:active,
+.brown_pill.active {
+    color: #F3E1D8;
+}
+
+.brown_pill:hover {
+    color: #F3E1D8;
+}
+
+.brown_pill span {
+    position: relative;
+    z-index: 3;
+}
+
+.brown_pill:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #8B5347;
+    z-index: 2;
+}
+
+.brown_pill:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #F3E1D8;
+    -webkit-transition-property: top, left;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: top, left;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: top, left;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: top, left;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: top, left;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.brown_pill.light:after {
+    background-color: #fff;
+}
+
+.brown_pill:hover:after {
+    top: 8px;
+    left: 8px;
+}
 
 .promo_descript .brown_pill  {
     margin: 15px 0 10px 0;
@@ -1278,11 +1363,11 @@ textarea:focus {
 }
 
 .white_bg {
-    width: 100%;
-    height: 100%;
+    width: 100px;
+    height: 100px;
     position: absolute;
     top: 0;
-    left: -35px;
+    left: -22px;
     background-color: #fff;
 }
 
@@ -2441,7 +2526,6 @@ p.main_price_val span {
     font-weight: bold;
     font-size: 30px;
     line-height: 36px;
-    color: #FFFFFF;
 }
 
 /*-- /Section 7 --*/
