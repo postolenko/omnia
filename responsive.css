@@ -53,6 +53,26 @@
 	    line-height: 32px;
 	}
 
+	.hand_shape {
+	    width: 434px;
+	    height: 1648px;
+	}
+
+	.hand_shape_rect {
+	    height: 240px;
+	    top: 142px;
+	}
+
+	.promo .hand_shape {
+	    top: 236px;
+	    right: 0;
+	}
+
+	.promo .hand_shape.animate.active {
+	    top: -11px;
+	    opacity: 1;
+	}
+
 /*-- /Section 1 --*/
 
 /*-- Section 2 --*/
@@ -62,7 +82,6 @@
 	}
 
 	.article .right {
-	    /*width: calc(100% - 525px);*/
 	    width: 720px;
 	    padding-left: 80px;
 	}
@@ -80,7 +99,6 @@
 	}
 
 	.thumb_1 .title_wrapp h3 {
-	    padding-bottom: 25px;
 	    font-size: 26px;
 	    line-height: 28px;
 	}
@@ -118,25 +136,42 @@
 
 /*-- Section 3 --*/
 
+.body_shape {
+    width: 376px;
+    height: 1326px;
+}
+
+.benefits_sect .body_shape {
+    top: 131px;
+}
+
 .article_2_wrapp {
     margin: 5px 0;
 }
 
 .h2_wrapp_descript_2 {
-    padding: 24px 0 0 0;
+    padding: 19px 0 0 0;
 }
 
-.items_2 {
+.items_2_wrapp {
+    margin: 41px 0;
+}
+
+.item_2 {
+    padding: 13px 25px;
+}
+
+/*.items_2 {
     margin: 49px -10px;
 }
 
 .item_2 {
     padding: 7px 30px;
-}
+}*/
 
-.white_bg {
+/*.white_bg {
     left: -23px;
- }
+ }*/
 
 .benefits_slider_wrapp:before {
     width: calc(100% - 28px);
@@ -171,10 +206,6 @@
 
 .sect_4 {
     padding: 78px 0 62px 0;
-}
-
-.thumb_2 {
-    height: 285px;
 }
 
 .thumb_2 .descript {
@@ -230,7 +261,7 @@
 }
 
 .cherry_bg {
-    background-size: 620px;
+    background-size: 710px;
 }
 
 .prices_thumbnails {
@@ -344,6 +375,82 @@
 
 /*-- /Footer --*/
 
+/*-- Popup --*/
+
+.popup_title h2 {
+    padding: 15px 0;
+    font-size: 54px;
+    line-height: 66px;
+}
+
+.popup_content .form_wrapp {
+    margin: 36px auto 20px auto;
+}
+
+/*-- /Popup --*/
+
+}
+
+@media only screen and (max-width: 1367px) {
+
+/*-- Section 3 --*/
+
+.benefits_slider .slide .img_box {
+    height: 442px;
+}
+
+/*.items_2 {
+    margin: 36px -10px;
+}
+
+.item_2 {
+    padding: 13px 30px;
+}*/
+
+.item_2 p {
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.item_2 p:before {
+    top: 6px;
+}
+
+.benefits_slider_wrapp {
+    max-width: 543px;
+}
+
+/*-- /Section 3 --*/
+
+/*-- Section 4 --*/
+
+.thumb_2 {
+    height: 285px;
+    padding: 11px 30px;
+}
+
+/*-- /Section 4 --*/
+
+/*-- Section 5 --*/
+
+.logo_bg:before {
+    width: 603px;
+    height: 603px;
+    top: 119px;
+    right: 80px;
+}
+
+/*-- /Section 5 --*/
+
+/*-- Section 7 --*/
+
+.lag {
+    width: 197px;
+    height: 879px;
+}
+
+/*-- /Section 7 --*/
+
 }
 
 @media only screen and (max-width: 1240px) {
@@ -367,6 +474,29 @@
 }
 
 /*-- /Header --*/
+
+/*-- Section 1 --*/
+
+.hand_shape_rect {
+    height: 180px;
+    top: 109px;
+}
+
+.promo .hand_shape {
+    width: 320px;
+    height: 1222px;
+    right: -59px;
+}
+
+.hand_shape_rect.animate.active {
+    width: 25%;
+}
+
+.hand_shape_rect.animate.active {
+    width: 38%;
+}
+
+/*-- /Section 1 --*/
 
 /*-- Footer --*/
 
@@ -480,6 +610,7 @@ p {
 .thumbnail_1 {
     width: 350px;
     margin-top: 54px;
+    margin-bottom: 14px;
 }
 
 #imgBox {
@@ -514,6 +645,10 @@ p {
 
 /*-- Section 3 --*/
 
+.benefits_sect .body_shape {
+    top: -63px;
+}
+
 .h2_wrapp_descript_2 {
     padding: 8px 0 0 0;
 }
@@ -531,6 +666,10 @@ p {
 	display: none;
 }
 
+.items_2_wrapp {
+    margin: 11px -35px 6px 10px;
+}
+
 .benefits_slider_resp {
 	padding: 0 50px;
     margin: 10px auto;
@@ -545,11 +684,15 @@ p {
 }
 
 .items_2 {
-    margin: 35px -10px;
+    margin: 23px 0;
 }
 
 .benefits_slider .slide .img_box {
     height: 440px;
+}
+
+.item_2 {
+    padding: 9px 25px;
 }
 
 .item_2 p {
@@ -673,6 +816,10 @@ h1 {
     line-height: 28px;
 }
 
+.promo_descript .inner {
+    max-width: 414px;
+}
+
 .brown_pill {
     min-width: 355px;
     padding: 15px 10px 16px 10px;
@@ -765,6 +912,13 @@ h1 {
 
 .sect_5 {
     padding: 70px 0 1px 0;
+}
+
+.logo_bg:before {
+    width: 603px;
+    height: 603px;
+    top: 50px;
+    right: -242px;
 }
 
 .reviews_title {
@@ -894,6 +1048,19 @@ h1 {
 
 /*-- Section 7 --*/
 
+.lag {
+    width: 149px;
+    height: 661px;
+}
+
+.sect_7 .lag {
+	top: auto;
+    bottom: -139px;
+    right: -39px;
+    transform: rotate(14deg);
+    -webkit-transform: rotate(14deg);
+}
+
 .contacts_wrapp {
     padding-top: 41px;
 }
@@ -926,6 +1093,41 @@ h1 {
 }
 
 /*-- /Section 7 --*/
+
+/*-- Popup --*/
+
+.popup_title h2 {
+    font-size: 46px;
+    line-height: 55px;
+}
+
+.popup_title p {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.form_wrapp {
+    max-width: 430px;
+}
+
+.form_wrapp_2 input {
+    text-align: left;
+}
+
+.popup_content {
+    max-width: 650px;
+}
+
+.popup_content .inner {
+    padding: 42px 90px 23px 90px;
+}
+
+.popup_content:before {
+    top: 25px;
+    left: 25px;
+}
+
+/*-- /Popup --*/
 
 }
 
@@ -1099,6 +1301,27 @@ h1 {
 	    top: 44px;
 	}
 
+	.promo .hand_shape {
+	    width: 187px;
+	    height: 709px;
+	    right: -54px;
+	}
+
+	.promo .hand_shape.animate.active {
+	    top: 12px;
+	    opacity: .6;
+	}
+
+	.hand_shape_rect {
+	    height: 102px;
+	    top: 81px;
+	}
+
+	.hand_shape_rect.animate.active {
+	    width: 50%;
+	    max-width: 149px;
+	}
+
 	/*-- /Section 1 --*/
 
 	/*-- Section 2 --*/
@@ -1159,7 +1382,6 @@ h1 {
 	}
 
 	.thumb_1 .title_wrapp h3 {
-	    padding-bottom: 23px;
 	    font-size: 24px;
 	    line-height: 28px;
 	}
@@ -1173,16 +1395,30 @@ h1 {
 
 	/*-- Section 3 --*/
 
+	.body_shape {
+	    width: 206px;
+	    height: 748px;
+	}
+
+	.benefits_sect .body_shape {
+	    top: 244px;
+	}
+
 	.h2_wrapp h2 {
 	    padding-bottom: 6px;
 	}
 
+	.items_2_wrapp {
+	    margin: 15px 0 6px 10px;
+	}
+
 	.items_2 {
-	    margin: 18px 0 10px -4px;
+		width: 100%;
+	    margin: 0 0 0 -10px;
 	}
 
 	.item_2 {
-	    padding: 7px 0 7px 30px;
+	    padding: 12px 0 12px 30px;
 	    width: 100%;
 	}
 
@@ -1271,9 +1507,15 @@ h1 {
 
 	/*-- Section 5 --*/
 
+	.logo_bg:before {
+	    width: 590px;
+	    height: 590px;
+	    top: 30px;
+	    right: -279px;
+	}
+
 	.reviews_title {
-	    flex-wrap: wrap;
-	    -webkit-flex-wrap: wrap;
+		display: block;
 	    margin: 13px 0 10px 0;
 	}
 
@@ -1281,9 +1523,16 @@ h1 {
 	    padding: 0;
 	}
 
+	.logo_2_wrapp {
+		display: inline-flex;
+		display: -webkit-inline-flex;
+	}
+
 	.logo_2 {
 	    width: 107px;
 	    margin-right: 15px;
+		position: relative;
+		top: 5px;
 	}
 
 	.logo_2_wrapp:before {
@@ -1291,9 +1540,13 @@ h1 {
 	}
 
 	.logo_2_wrapp p {
-	    padding-top: 8px;
+	    padding-top: 0;
 	    font-size: 20px;
-	    line-height: 27px;
+	    line-height: 26px;
+	}
+
+	.reviews_title .icon_p {
+	    padding-top: 9px;
 	}
 
 	.icon_p p {
@@ -1542,6 +1795,10 @@ h1 {
 	    line-height: 36px;
 	}
 
+	.lag {
+		display: none;
+	}
+
 	/*-- /Section 7 --*/
 
 	/*-- Footer --*/
@@ -1609,6 +1866,43 @@ h1 {
 	}
 
 	/*-- /Footer --*/
+
+	/*-- Popup --*/
+
+	.popup_content:before {
+		display: none;
+	}
+
+	.popup_content .close_popup {
+	    top: 18px;
+	    right: 20px;
+	}
+
+	.popup_content .form_wrapp {
+	    margin: 20px auto 20px auto;
+	}
+
+	.popup_content .inner {
+    	padding: 37px 30px 4px 30px;
+	}
+
+	.popup_title h2 {
+	    font-size: 26px;
+	    line-height: 29px;
+	}
+
+	.popup_title p {
+		padding: 10px 0 5px 0;
+	    font-size: 16px;
+	    line-height: 21px;
+	}
+
+	.input_wrapp input {
+	    padding: 0 10px;
+	    font-size: 16px;
+	}
+
+	/*-- /Popup --*/
 
 }
 
