@@ -261,7 +261,7 @@
 }
 
 .cherry_bg {
-    background-size: 710px;
+    background-size: 1650px;
 }
 
 .prices_thumbnails {
@@ -398,14 +398,6 @@
 .benefits_slider .slide .img_box {
     height: 442px;
 }
-
-/*.items_2 {
-    margin: 36px -10px;
-}
-
-.item_2 {
-    padding: 13px 30px;
-}*/
 
 .item_2 p {
     font-size: 20px;
@@ -1022,6 +1014,11 @@ h1 {
     padding: 71px 0 74px 0;
 }
 
+.cherry_bg {
+    background-image: url(img/body_3_2.jpg);
+	background-size: 750px;
+}
+
 .prices_thumbnails {
     margin: 33px -10px 26px -10px;
 }
@@ -1614,9 +1611,12 @@ h1 {
 	    padding: 56px 0 26px 0;
 	}
 
-	.cherry_bg {
+	/*-- Section 6 --*/
+
+/*	.cherry_bg {
+		background-image: url(img/body_3_mob);
 	    background-size: 415px;
-	}
+	}*/
 
 	.h2_wrapp_3 > div {
 	    margin-bottom: 10px;
@@ -1944,6 +1944,11 @@ h1 {
 	}
 
 	/*-- /Section 5 --*/
+
+	.cherry_bg {
+		background-image: url(img/body_3_mob.jpg);
+	    background-size: cover;
+	}
 
 	/*-- Footer --*/
 

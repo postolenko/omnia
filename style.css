@@ -2033,10 +2033,10 @@ textarea:focus {
 
 .cherry_bg {
     background-color: #8B5347;
-    background-size: auto;
+    background-size: contain;
     background-position: center top;
     background-repeat: no-repeat;
-    background-image: url(img/sect_6_bg.png);
+    background-image: url(img/body_3.jpg);
 }
 
 .h2_wrapp_3 {
