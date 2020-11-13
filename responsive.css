@@ -19,6 +19,10 @@
 		padding: 0 50px;
 	}
 
+    .h2_wrapp_2_title .h_line {
+        margin-top: 48px;
+    }
+
 /*-- Header --*/
 
 	.header_site {
@@ -42,7 +46,7 @@
 	    padding: 39px 0 1px 77px;
 	}
 
-	.promo_descript:before {
+	.promo_descript .line_borders {
 	    width: 110%;
 	    height: 100%;
 	    left: -3px;
@@ -118,18 +122,18 @@
 	    height: 540px;
 	}
 
-	.img_bg_2:before {
-	    width: calc(100% - 70px);
-	    height: calc(100% - 60px);
-	    top: 22px;
-	    left: 25px;
-	}
+    .img_bg_2 .white_line {
+        width: calc(100% - 61px);
+        height: calc(100% - 56px);
+        top: 26px;
+        left: 25px;
+    }
 
-	.img_bg_2:after {
-	    width: calc(100% - 45px);
-	    height: calc(100% - 38px);
-	    top: 22px;
-	    left: 26px;
+	.img_bg_2 .pink_line {
+        width: calc(100% - 28px);
+        height: calc(100% - 21px);
+        top: 26px;
+        left: 25px;
 	}
 
 /*-- /Section 2 --*/
@@ -161,19 +165,7 @@
     padding: 13px 25px;
 }
 
-/*.items_2 {
-    margin: 49px -10px;
-}
-
-.item_2 {
-    padding: 7px 30px;
-}*/
-
-/*.white_bg {
-    left: -23px;
- }*/
-
-.benefits_slider_wrapp:before {
+/*.benefits_slider_wrapp:before {
     width: calc(100% - 28px);
     height: calc(100% - 41px);
     top: 25px;
@@ -185,7 +177,7 @@
     height: calc(100% - 16px);
     top: 25px;
     left: -26px;
-}
+}*/
 
 .benefits_slider_controls .slick-dots {
 	text-align: left;
@@ -314,29 +306,31 @@
     margin: 85px 0 60px 0;
 }
 
-.img_box_2 {
+.img_box_2_2 {
 	width: calc(50% - 76px);
     height: 591px;
     margin-top: 16px;
     padding: 0 30px 30px 0;
 }
 
-.img_bg_inner_2 {
+.img_bg_inner_2_2 {
     height: 590px;
 }
 
-.img_bg_2:before {
-    width: calc(100% - 65px);
-    height: calc(100% - 30px);
-    top: 25px;
-    left: 25px;
+.img_box_2_2 .img_bg_2_2 .white_line {
+    width: calc(100% - 67px);
+    height: calc(100% - 32px);
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    z-index: 2;
 }
 
-.img_bg_2:after {
-    width: calc(100% - 45px);
-    height: calc(100% - 5px);
-    top: 25px;
-    left: 26px;
+.img_box_2_2 .img_bg_2_2 .pink_line {
+    width: calc(100% - 33px);
+    height: calc(100% + 4px);
+    top: 35px;
+    left: 35px;
 }
 
 .title_wrapp_2 h2 {
@@ -410,6 +404,24 @@
 
 .benefits_slider_wrapp {
     max-width: 543px;
+}
+
+.benefits_slider_wrapp .white_lines {
+    width: calc(100% - 26px);
+    height: calc(100% - 38px);
+    top: 30px;
+    left: -4px;
+}
+
+.benefits_slider_wrapp .pink_lines {
+    width: calc(100% - 1px);
+    height: calc(100% - 16px);
+    top: 30px;
+    left: -30px;
+}
+
+.white_bg {
+    left: -28px;
 }
 
 /*-- /Section 3 --*/
@@ -593,6 +605,10 @@ p {
 	line-height: 30px;
 }
 
+.h2_wrapp_2_title .h_line {
+    margin-top: 43px;
+}
+
 /*-- Section 2 --*/
 
 .article_1_wrapp {
@@ -619,18 +635,11 @@ p {
     height: 350px;
 }
 
-.img_bg_2:before {
-    width: calc(100% - 50px);
-    height: calc(100% - 39px);
-    top: 15px;
-    left: 15px;
-}
-
-.img_bg_2:after {
-    width: calc(100% - 30px);
-    height: calc(100% - 18px);
-    top: 15px;
-    left: 15px;
+.img_bg_2 .white_line {
+    width: calc(100% - 52px);
+    height: calc(100% - 42px);
+    top: 26px;
+    left: 25px;
 }
 
 /*-- /Section 2 --*/
@@ -679,6 +688,10 @@ p {
     right: 0;
 }
 
+.benefits_slider_arrows {
+    opacity: 1;
+}
+
 .items_2 {
     margin: 23px 0;
 }
@@ -710,19 +723,6 @@ p {
     left: 0;
 }
 
-.benefits_slider_wrapp:before {
-    width: calc(100% - 22px);
-    height: calc(100% - 31px);
-    top: 15px;
-    left: -4px;
-}
-
-.benefits_slider_wrapp:after {
-    width: calc(100% - 2px);
-    height: calc(100% - 16px);
-    top: 15px;
-}
-
 /*-- /Section 3 --*/
 
 /*-- Section 6 --*/
@@ -750,6 +750,24 @@ p {
 }
 
 /*-- /Section 6 --*/
+
+/*-- Section 7 --*/
+
+.img_box_2_2 .img_bg_2_2 .white_line {
+    width: calc(100% - 61px);
+    height: calc(100% - 45px);
+    top: 29px;
+    left: 34px;
+}
+
+.img_box_2_2 .img_bg_2_2 .pink_line {
+    width: calc(100% - 32px);
+    height: calc(100% - 16px);
+    top: 29px;
+    left: 34px;
+}
+
+/*-- /Section 7 --*/
 
 }
 
@@ -823,7 +841,7 @@ h1 {
     line-height: 32px;
 }
 
-.promo_descript:before {
+.promo_descript .line_borders {
     max-width: 565px;
 }
 
@@ -1197,6 +1215,10 @@ h1 {
 	    padding: 0 15px;
 	}
 
+    .h2_wrapp_2_title .h_line {
+        margin-top: 16px;
+    }
+
 	/*-- Header --*/
 
 	.resp_menu_nav_wrapp {
@@ -1249,11 +1271,13 @@ h1 {
 
 	.main_nav_resp li {
 	    padding: 9px 0;
+        white-space: nowrap;
 	}
 
 	.contacts_list li a {
 	    font-size: 12px;
 	    line-height: 20px;
+        white-space: nowrap;
 	}
 
 	.contact_item {
@@ -1278,7 +1302,7 @@ h1 {
 	    padding: 31px 20px 1px 18px;
 	}
 
-	.promo_descript:before {
+	.promo_descript .line_borders {
 	    width: 100%;
 	    left: -4px;
 	}
@@ -1354,18 +1378,19 @@ h1 {
 	    left: 15px;
 	}
 
-	.img_bg_2:after {
-		height: calc(100% - 3px);
-		top: 12px;
-		left: 13px;
-	}
+	.img_bg_2 .white_line {
+        width: calc(100% - 45px);
+        height: calc(100% - 19px);
+        top: 23px;
+        left: 25px;
+    }
 
-	.img_bg_2:before {
-	    width: calc(100% - 41px);
-	    height: calc(100% - 16px);
-	    top: 12px;
-	    left: 12px;
-	}
+    .img_bg_2 .pink_line {
+        width: calc(100% - 28px);
+        height: calc(100% - 2px);
+        top: 23px;
+        left: 25px;
+    }
 
 	.img_bg_inner_2 {
 	    height: 200px;
@@ -1441,10 +1466,19 @@ h1 {
 	    height: 250px;
 	}
 
-	.benefits_slider_wrapp:after {
-		width: calc(100% - 9px);
-	    left: -18px;
-	} 
+    .benefits_slider_wrapp .white_lines {
+        width: calc(100% - 23px);
+        height: calc(100% - 28px);
+        top: 20px;
+        left: -4px;
+    }
+
+    .benefits_slider_wrapp .pink_lines {
+        width: calc(100% - 1px);
+        height: calc(100% - 9px);
+        top: 20px;
+        left: -27px;
+    }
 
 	.benefits_slider_arrows .slick-arrow {
 	    margin-top: -125px;
@@ -1613,11 +1647,6 @@ h1 {
 
 	/*-- Section 6 --*/
 
-/*	.cherry_bg {
-		background-image: url(img/body_3_mob);
-	    background-size: 415px;
-	}*/
-
 	.h2_wrapp_3 > div {
 	    margin-bottom: 10px;
 	}
@@ -1775,6 +1804,20 @@ h1 {
 	.img_box_2_2_row .img_box_2 {
 	    left: 7px;
 	}
+
+    .img_box_2_2 .img_bg_2_2 .white_line {
+        width: calc(100% - 43px);
+        height: calc(100% - 16px);
+        top: 20px;
+        left: 22px;
+    }
+
+    .img_box_2_2 .img_bg_2_2 .pink_line {
+        width: calc(100% - 24px);
+        height: calc(100% - -4px);
+        top: 20px;
+        left: 22px;
+    }
 
 	.title_wrapp_2 h2 {
 	    padding: 0 0 12px 0;

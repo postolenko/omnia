@@ -29,10 +29,10 @@
 				<div class="center">
 					<div class="main_nav_wrapp" id="resp_nav">
 						<ul class="main_nav">							
-							<li><a href="#"><span>services</span></a></li>
-							<li><a href="#"><span>team</span></a></li>
-							<li><a href="#"><span>Reviews</span></a></li>
-							<li><a href="#"><span>price</span></a></li>
+							<li><a href="#services"><span>services</span></a></li>
+							<li><a href="#team"><span>team</span></a></li>
+							<li><a href="#reviews"><span>reviews</span></a></li>
+							<li><a href="#price"><span>price</span></a></li>
 						</ul>
 					</div>
 				</div>
@@ -82,10 +82,10 @@
 		</div>
 		<div class="resp_menu_nav_wrapp">
 			<ul class="main_nav main_nav_resp">							
-				<li><a href="#"><span>services</span></a></li>
-				<li><a href="#"><span>team</span></a></li>
-				<li><a href="#"><span>Reviews</span></a></li>
-				<li><a href="#"><span>price</span></a></li>
+				<li><a href="#services"><span>services</span></a></li>
+				<li><a href="#team"><span>team</span></a></li>
+				<li><a href="#reviews"><span>reviews</span></a></li>
+				<li><a href="#price"><span>price</span></a></li>
 			</ul>
 		</div>
 		<div class="resp_menu_footer">
@@ -122,11 +122,15 @@
 		<!-- Section 1 -->
 		<section class="promo">
 			<div class="row">
-				<div class="promo_descript">
-					<div class="animate leftSlice">
+				<div class="promo_descript animate">
+					<div class="line_borders">
+						<div></div>
+						<div></div>
+					</div>
+					<div class="promo_descript_content animate leftSlice">
 						<h1>Personal training studio</h1>
 						<div class="inner">
-							<p>Omnia personal training — comprehensive approach to your well-being. Together with you, we develop tailored programs to improve your physical and mental health.</p>
+							<p><span class="main_text">Omnia personal training</span> — comprehensive approach to your <span class="nowrapp">well-being</span>. Together with you, we develop tailored programs to improve your physical and mental health.</p>
 						</div>
 						<button type="button" class="brown_pill" data-popup-link = "popup_1"><span>Upgrade your health</span></button>
 					</div>
@@ -138,27 +142,36 @@
 		<!-- /Section 1 -->
 
 		<!-- Section 2 -->
-		<section class="sect_2">
+		<section class="sect_2" id="services">
 			<div class="article_1_wrapp">
-				<div class="img_box_2 animate fadeIn" id="imgBox">
+				<div class="img_box_2 animate" id="imgBox">
 					<div class="img_bg_2">
+						<div class="white_line">
+							<div class="top_lines"></div>
+							<div class="bottom_lines"></div>
+						</div>
+						<div class="pink_line">
+							<div class="top_lines"></div>
+							<div class="bottom_lines"></div>
+						</div>
 						<div class="img_bg_inner_2" style="background-image: url('img/image_01.jpg');"></div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="article">					
-						<div class="right animate fadeInUp" id="right_coord">
+						<div class="right" id="right_coord">
 							<div class="h2_wrapp">							
 								<div class="h2_wrapp_2_title">
 									<div>
 										<h2>Our program</h2>
 									</div>
+									<div class="h_line animate"></div>
 								</div>
 								<div class="h2_wrapp_descript">
 									<p>We develop highly individualized programs and focus on sustainable improvement of your results.</p>
 								</div>
 							</div>
-							<div class="thumbnail_1_wrapp">
+							<div class="thumbnail_1_wrapp animate fadeInUp">
 								<div class="thumbnail_1">
 									<div class="thumb_1">
 										<img class="number" src="img/1.svg" alt="" />
@@ -229,18 +242,19 @@
 			<div class="article_2_wrapp">
 				<div class="row">
 					<div class="article_2">
-						<div class="left animate leftSlice">
+						<div class="left">
 							<div class="h2_wrapp">
 								<div class="h2_wrapp_2_title">
 									<div>
 										<h2>Benefits</h2>
 									</div>
+									<div class="h_line animate"></div>
 								</div>
 								<div class="h2_wrapp_descript_2">
 									<p>Enjoy our quality service for your exceptional experience.</p>
 								</div>
 							</div>
-							<div class="items_2_wrapp">
+							<div class="items_2_wrapp animate leftSlice">
 								<div class="items_2">
 									<div class="item_2">
 										<div>
@@ -256,7 +270,7 @@
 										<div>
 											<p><span>Wellness area with steam bath and infrared sauna</span></p>
 										</div>
-									</div>																	
+									</div>
 								</div>
 								<div class="items_2">
 									<div class="item_2">
@@ -281,8 +295,17 @@
 					</div>
 				</div>
 				<div class="benefits_slider_resp">
-					<div class="benefits_slider_wrapp animate fadeIn">
+					<div class="benefits_slider_wrapp animate">
+						<div class="white_lines">
+							<div class="top_lines"></div>
+							<div class="bottom_lines"></div>
+						</div>
+						<div class="pink_lines">
+							<div class="top_lines"></div>
+							<div class="bottom_lines"></div>
+						</div>
 						<span class="white_bg"></span>
+						<div class="benefits_slider_click"></div>
 						<div class="benefits_slider">
 							<div class="slide">
 								<div class="img_box" style="background-image: url(img/img_7.jpg);"></div>
@@ -313,7 +336,7 @@
 		<!-- /Section 3 -->
 
 		<!-- Section 4 -->
-		<section class="sect_4">
+		<section class="sect_4" id="team">
 			<div class="row">
 				<div class="h2_wrapp_center animate fadeInUp">
 					<h2>Meet us</h2>
@@ -418,12 +441,13 @@
 		<!-- /Section 4 -->
 
 		<!-- Section 5 -->
-		<section class="sect_5 grey_bg logo_bg">
+		<section class="sect_5 grey_bg logo_bg" id="reviews">
 			<div class="row">
 				<div class="h2_wrapp_2_title white animate fadeIn">
 					<div>
 						<h2>Reviews</h2>
 					</div>
+					<div class="h_line animate"></div>
 				</div>
 				<div class="reviews_title">
 					<div>
@@ -622,9 +646,9 @@
 		<!-- /Section 5 -->
 
 		<!-- Section 6 -->
-		<section class="sect_6 cherry_bg">
+		<section class="sect_6 cherry_bg" id="price">
 			<div class="row">
-				<div class="h2_wrapp_3">
+				<div class="h2_wrapp_3 animate">
 					<div>
 						<h2>Prices</h2>
 					</div>
@@ -742,7 +766,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="tags_wrapp">
+				<div class="tags_wrapp animate">
 					<div class="inner">
 						<ul class="tags">
 							<li>No registration or administration costs</li>
@@ -761,9 +785,17 @@
 		<section class="sect_7">
 			<div class="lag animate"></div>
 			<div class="contacts_article">
-				<div class="img_box_2_2_row animate fadeIn">
-					<div class="img_box_2 img_box_2_2">
+				<div class="img_box_2_2_row">
+					<div class="img_box_2 img_box_2_2 animate">
 						<div class="img_bg_2 img_bg_2_2">
+							<div class="white_line">
+								<div class="top_lines"></div>
+								<div class="bottom_lines"></div>
+							</div>
+							<div class="pink_line">
+								<div class="top_lines"></div>
+								<div class="bottom_lines"></div>
+							</div>
 							<div class="img_bg_inner_2 img_bg_inner_2_2" style="background-image: url(img/contacts_img.jpg);"></div>
 						</div>
 					</div>
@@ -780,7 +812,7 @@
 									<input type="text" name="name" placeholder="Name" />
 								</div>
 								<div class="input_wrapp">
-									<input type="tel" name="tel" placeholder="Тел" />
+									<input type="tel" name="tel" placeholder="Tel" />
 								</div>
 								<div class="input_wrapp">
 									<input type="email" name="email" placeholder="E-mail" />
@@ -877,7 +909,7 @@
 						<input type="text" name="name" placeholder="Name" />
 					</div>
 					<div class="input_wrapp">
-						<input type="tel" name="tel" placeholder="Тел" />
+						<input type="tel" name="tel" placeholder="Tel" />
 					</div>
 					<div class="input_wrapp">
 						<input type="email" name="email" placeholder="E-mail" />
