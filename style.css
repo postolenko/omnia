@@ -1242,6 +1242,15 @@ textarea:focus {
     position: relative;
 }
 
+.bottom_coord {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    opacity: 0;
+}
+
 .article_1_wrapp {
     margin: 88px 0 20px 0;
     position: relative;
@@ -1251,6 +1260,7 @@ textarea:focus {
     display: flex;
     display: -webkit-flex;
     justify-content: flex-end;
+    -webkit-justify-content: flex-end;
 }
 
 .article .right {
@@ -1264,6 +1274,19 @@ textarea:focus {
     padding: 0 35px 35px 0;
     position: absolute;
     top: 9px;
+    left: 0;
+}
+
+#imgBox.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#imgBox.absolute {
+    position: absolute;
+    top: auto;
+    bottom: 0;
     left: 0;
 }
 
@@ -1643,14 +1666,16 @@ textarea:focus {
     display: inline-block;
     vertical-align: top;
     position: relative;
+    /*overflow: hidden;*/
 }
 
 .thumb_1 .title_wrapp {
     padding-bottom: 29px;
 }
 
-.thumb_1 .title_wrapp h3 {
+.title_wrapp h3 {
     display: inline;
+    overflow: hidden;
     position: relative;
     font-family: "PF Regal Display Pro";
     font-weight: 500;
@@ -1662,6 +1687,53 @@ textarea:focus {
     background: -webkit-linear-gradient(top,  rgba(243,225,216,0) 0%,rgba(243,225,216,0) 59%,rgba(243,225,216,1) 60%,rgba(243,225,216,1) 100%);
     background: linear-gradient(to bottom,  rgba(243,225,216,0) 0%,rgba(243,225,216,0) 59%,rgba(243,225,216,1) 60%,rgba(243,225,216,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f3e1d8', endColorstr='#f3e1d8',GradientType=0 );
+}
+
+.thumb_1 .title_wrapp h3.line_h {
+    /*display: inline;*/
+    outline: 1px solid green;
+    /*width: 100%;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    left: -110%;
+    /*font-family: "PF Regal Display Pro";*/
+/*    font-weight: 500;
+    font-size: 34px;
+    line-height: 34px;*/
+    /*color: transparent;*/
+    background: -moz-linear-gradient(top,  rgba(243,225,216,0) 0%, rgba(243,225,216,0) 59%, rgba(243,225,216,1) 60%, rgba(243,225,216,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(243,225,216,0) 0%,rgba(243,225,216,0) 59%,rgba(243,225,216,1) 60%,rgba(243,225,216,1) 100%);
+    background: linear-gradient(to bottom,  rgba(243,225,216,0) 0%,rgba(243,225,216,0) 59%,rgba(243,225,216,1) 60%,rgba(243,225,216,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f3e1d8', endColorstr='#f3e1d8',GradientType=0 );
+
+    -webkit-transition-property: left;
+    -webkit-transition-duration: 3s;
+    -webkit-transition-delay: 1s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: left;
+    -moz-transition-duration: 3s;
+    -moz-transition-delay: 1s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: left;
+    -ms-transition-duration: 3s;
+    -ms-transition-delay: 1s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: left;
+    -o-transition-duration: 3s;
+    -o-transition-delay: 1s;
+    -o-transition-timing-function: ease;
+
+    transition-property: left;
+    transition-duration: 3s;
+    transition-delay: 1s;
+    transition-timing-function: ease;
+}
+
+.thumb_1.animate.active .title_wrapp h3.line_h {
+    left: 0;
 }
 
 .thumb_1 p {
@@ -2429,16 +2501,6 @@ textarea:focus {
     padding-right: 50px;
 }
 
-/*.h2_wrapp_2_title .h_line {
-    display: inline-block;
-    vertical-align: middle;
-    content: "";
-    width: 0;
-    height: 4px;
-    background-color: #F3E1D8;
-    margin-top: 49px;
-}*/
-
 .h2_wrapp_2_title.white .h_line {
     background-color: #fff;
 }
@@ -2688,6 +2750,8 @@ textarea:focus {
 
 .testimonial_descript {
     padding: 28px 0 15px 0;
+    min-height: 241px;
+    position: relative;
 }
 
 .testimonial_descript p {

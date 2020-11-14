@@ -1,3 +1,24 @@
+function getSidebarPosition() {
+  if( $("#imgBox").length > 0 && bodyWidth > 600 ) {
+    var sidebarWrappTopCoord, sidebarWrappBottomCoord, windowtopCoord, windowBottomCoord;
+    sidebarWrappTopCoord = $(".sidebar_wrapp").offset().top;
+    sidebarWrappBottomCoord = $(".bottom_coord").offset().top;
+    windowTopCoord = $(document).scrollTop();
+    windowBottomCoord = windowTopCoord + $(window).height();
+    if( windowTopCoord > sidebarWrappTopCoord ) {
+      $("#imgBox").addClass("fixed");
+      $("#imgBox").removeClass("absolute");
+      if($("#imgBox").offset().top + $("#imgBox").outerHeight() >= sidebarWrappBottomCoord) {
+        $("#imgBox").removeClass("fixed");
+        $("#imgBox").addClass("absolute");
+      }
+    } else {
+      $("#imgBox").removeClass("fixed");
+      $("#imgBox").removeClass("absolute");
+    }
+  }
+}
+
 function getAnimation() {
   $(".animate").each(function() {
     if( $(this).offset().top <= $(document).scrollTop() + $(window).height() ) {
@@ -172,10 +193,12 @@ $(window).resize(function() {
   //   }
   // });
   getPopupEvents();
+  getSidebarPosition();
 });
 
 $(document).scroll(function() {
   getAnimation();
+  getSidebarPosition();
 });
 
 $(document).ready(function() {
@@ -184,6 +207,7 @@ $(document).ready(function() {
   getMeetUsSlider();
   getPricesSlider();
   getPopupEvents();
+  getSidebarPosition();
 
     if( $(".testimonial_slider").length > 0 ) {
         $(".testimonial_slider").not(".slick-initialized").slick({
