@@ -165,20 +165,6 @@
     padding: 13px 25px;
 }
 
-/*.benefits_slider_wrapp:before {
-    width: calc(100% - 28px);
-    height: calc(100% - 41px);
-    top: 25px;
-    left: -4px;
-}
-
-.benefits_slider_wrapp:after {
-	width: calc(100% - 7px);
-    height: calc(100% - 16px);
-    top: 25px;
-    left: -26px;
-}*/
-
 .benefits_slider_controls .slick-dots {
 	text-align: left;
 }

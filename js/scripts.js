@@ -57,18 +57,12 @@ function getMeetUsSlider() {
           }
       ]
     });
-
-    $( ".thumb_2" ).bind({
-      mouseenter: function() {
-        $( this ).find(".thumb_2_text").slideDown(300);
-        console.log("mouseenter");
-      },
-      mouseleave: function() {
-        $( this ).find(".thumb_2_text").slideUp(300);
-        console.log("mouseleave");
-      }
+    $(document).on('mouseenter', '.thumb_2', function() {
+      $( this ).find(".thumb_2_text").slideDown(300);
     });
-
+    $(document).on('mouseleave', '.thumb_2', function() {
+      $( this ).find(".thumb_2_text").slideUp(300);
+    });
   }
 }
 
@@ -82,8 +76,6 @@ function getPricesSlider() {
       arrows: true,
       variableWidth: true,
       initialSlide: 3,
-      // prevArrow: '<button class="slick-prev" aria-label="Previous" type="button"><img src="img/arrow_black_right.svg"></button>',
-      // nextArrow: '<button class="slick-next" aria-label="Next" type="button"><img src="img/arrow_black_right.svg"></button>',
       responsive: [
           {
               breakpoint: 720,
@@ -98,7 +90,7 @@ function getPricesSlider() {
 }
 
 function getPopupEvents() {
-    $("[data-popup-link]").on("click", function(e) {
+    $(document).on("click", "[data-popup-link]",  function(e) {
         e.preventDefault();
         popupName = $(this).attr("data-popup-link");
         div = document.createElement('div');
@@ -122,7 +114,7 @@ function getPopupEvents() {
         $(".popup_bg").fadeIn(300);
         $("[data-popup = '"+ popupName +"']").fadeIn(300);
     });
-    $(".close_popup, .popup_bg").on("click", function(e) {
+    $(document).on("click", ".close_popup, .popup_bg", function(e) {
         e.preventDefault();
         curTop = $("body").css("top");
         curTop = Math.abs(parseInt(curTop, 10));
@@ -180,18 +172,10 @@ $(window).load(function() {
 });
 
 $(window).resize(function() {
-  getRightCoord();
   bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
+  getRightCoord();  
   getMeetUsSlider();
   getPricesSlider();
-  // $( ".thumb_2" ).bind({
-  //   mouseenter: function() {
-  //     $( this ).find(".thumb_2_text").slideDown(300);
-  //   },
-  //   mouseleave: function() {
-  //     $( this ).find(".thumb_2_text").slideUp(300);
-  //   }
-  // });
   getPopupEvents();
   getSidebarPosition();
 });
@@ -259,22 +243,7 @@ $(document).ready(function() {
           slidesToScroll: 1,
           fade: true,
           appendDots: $(".benefits_slider_controls"),
-          appendArrows: $(".benefits_slider_arrows"),
-          // responsive: [
-          //     {
-          //       breakpoint: 1024,
-          //       settings: {
-          //         arrows: true
-          //       }
-          //     },
-          //     // {
-          //     //   breakpoint: 540,
-          //     //   settings: {
-          //     //     slidesToShow: 1,
-          //     //     slidesToScroll: 1
-          //     //   }
-          //     // }
-          //   ]
+          appendArrows: $(".benefits_slider_arrows")
       });
     }
 
