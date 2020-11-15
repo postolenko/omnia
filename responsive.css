@@ -1989,3 +1989,15 @@ h1 {
 	/*-- /Footer --*/
 
 }
+
+
+@media only screen and (min-width: 601px) {
+
+.img_box_2 {
+    height: 200px !important;
+    position: relative !important;
+    top: 0 !important;
+    left: 15px !important;
+}
+
+}
