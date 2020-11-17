@@ -147,24 +147,21 @@ $(document).ready(function() {
         $('.testimonial_slider').owlCarousel({
             loop:true,
             responsiveClass:true,
+            margin: 20,
+            nav: false,
+            dots: false,
             responsive:{
                 0:{
-                    items:1,
-                    nav:true
-                },
-                600:{
-                    items:2,
-                    nav:false
-                },
-                900:{
-                    items:3,
                     nav:true,
-                    loop:false
+                    autoWidth: true
+                },
+                800:{
+                    nav:true,
+                    autoWidth: true
                 },
                 1024:{
                     items:4,
-                    nav:true,
-                    loop:false
+                    nav:true
                 }
             }
         })
