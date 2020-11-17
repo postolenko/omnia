@@ -115,35 +115,6 @@ $(document).ready(function() {
   getSidebarPosition();
 
     if( $(".testimonial_slider").length > 0 ) {
-        // $(".testimonial_slider").not(".slick-initialized").slick({
-        //     dots: false,
-        //     arrows: false,
-        //     autoplaySpeed: 4000,
-        //     speed: 1200,
-        //     slidesToShow: 4,
-        //     slidesToScroll: 1,
-        //     prevArrow: '<button class="slick-prev" aria-label="Previous" type="button"><img src="img/arrow_red_right.svg"></button>',
-        //     nextArrow: '<button class="slick-next" aria-label="Next" type="button"><img src="img/arrow_red_right.svg"></button>',
-        //     responsive: [
-        //         {
-        //           breakpoint: 1124,
-        //           settings: {
-        //             slidesToShow: 3,
-        //             slidesToScroll: 1
-        //           }
-        //         },
-        //         {
-        //           breakpoint: 900,
-        //           settings: {
-        //             slidesToShow: 2,
-        //             slidesToScroll: 1,
-        //             variableWidth: true,
-        //             arrows: true
-        //           }
-        //         }
-        //       ]
-        // });
-
         $('.testimonial_slider').owlCarousel({
             loop:true,
             responsiveClass:true,
@@ -169,11 +140,23 @@ $(document).ready(function() {
 
     if( $(".benefits_slider").length > 0 ) {
 
-      $(".benefits_slider_click").on("click", function(e) {
-        e.preventDefault();
-        parentBlock = $(this).closest(".benefits_slider_wrapp");
-        benefitsSliderNext = parentBlock.find(".slick-next").trigger("click");
+      jQuery(".benefits_slider_wrapp").swipe({
+         swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+           console.log(direction);
+           if(direction == 'left') {
+            $(".benefits_slider_arrows .slick-next").trigger("click");
+           }
+           if(direction == 'right') {
+            $(".benefits_slider_arrows .slick-prev").trigger("click");
+           }
+         }
       });
+
+      // $(".benefits_slider_click").on("click", function(e) {
+      //   e.preventDefault();
+      //   parentBlock = $(this).closest(".benefits_slider_wrapp");
+      //   benefitsSliderNext = parentBlock.find(".slick-next").trigger("click");
+      // });
 
       $(".benefits_slider").not(".slick-initialized").slick({
           dots: true,
