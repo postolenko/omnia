@@ -398,6 +398,84 @@ a:active {
 
 /*-- /Slick --*/
 
+/*-- Owl --*/
+
+.owl-prev {
+    display: block;
+    width: 24px;
+    height: 36px;
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -212px;
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+.owl-prev:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("img/arrow_black_right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+}
+
+.owl-prev span {
+    display: none;
+}
+
+.owl-next {
+    display: block;
+    width: 24px;
+    height: 36px;
+    cursor: pointer;
+    z-index: 3;
+    position: absolute;
+    top: 50%;    
+    right: 43px;
+    margin-top: -212px;
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+.owl-next:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("img/arrow_black_right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.owl-next span {
+    display: none;
+}
+
+.thumbnails_2 .owl-prev {
+    left: -22px;
+    margin-top: -239px;
+}
+
+.thumbnails_2 .owl-next {
+    right: 21px;
+    margin-top: -239px;
+}
+
+/*-- /Owl --*/
+
 /*-------------------------------------------*/
 /* ----- HEADER ------ */
 /*-------------------------------------------*/
@@ -2248,7 +2326,7 @@ a:active {
 
 .thumbnails_2_wrapp {
     margin-bottom: 43px;
-    padding-bottom: 10px;
+    padding-bottom: 18px;
     border-bottom: 4px solid #F1EEE8;
 }
 
@@ -2258,6 +2336,14 @@ a:active {
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     margin: 29px -10px 0 -10px;
+    position: relative;
+}
+
+.thumbnails_2 .owl-nav {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .thumb_2 {
@@ -2594,7 +2680,7 @@ a:active {
 }
 
 .testimonial_slider {
-    margin: 20px -10px;
+    margin: 20px 0;
 }
 
 .testimonial_slider .slide {
@@ -2884,6 +2970,24 @@ a:active {
     display: flex;
     width: calc(20% - 20px);
     margin: 10px;
+}
+
+.prices_thumbnails .owl-prev {
+    left: -3px;
+    margin-top: -20px;
+}
+
+.prices_thumbnails .owl-next {
+    right: -6px;
+    margin-top: -20px;
+}
+
+.prices_thumbnails .owl-prev:before {
+    background-image: url(img/arrow_white_right.svg);
+}
+
+.prices_thumbnails .owl-next:before {
+    background-image: url(img/arrow_white_right.svg);
 }
 
 .price_thumb {

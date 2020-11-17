@@ -723,16 +723,14 @@ p {
 	min-height: 367px;
 }
 
-.prices_thumbnails .slick-arrow {
-    margin-top: -50px;
+.prices_thumbnails {
+    margin: 50px 0 28px 0;
 }
 
-.prices_thumbnails .slick-next {
-    right: -29px;
-}
-
-.prices_thumbnails .slick-prev {
-    left: -28px;
+.prices_thumbnails .slide {
+    display: block;
+    width: auto;
+    margin: 0;
 }
 
 /*-- /Section 6 --*/
@@ -852,16 +850,17 @@ h1 {
 }
 
 .thumbnails_2 .slide {
-	margin: 0;
+    width: auto !important;
+    margin: 0;
 }
 
 .thumbnails_2 .thumb_2 {
 	width: 334px;
 	height: 435px;
-	margin: 0 10px;
+	margin: 0;
 }
 
-.thumbnails_2 .slick-slide {
+.thumbnails_2 .owl-item.active + .owl-item.active + .owl-item.active {
 	opacity: .5;
 	-webkit-transition-property: opacity;
     -webkit-transition-duration: .3s;
@@ -884,26 +883,8 @@ h1 {
     transition-timing-function: ease;
 }
 
-.thumbnails_2 .slick-current {
+.thumbnails_2 .owl-item.active  {
 	opacity: 1;
-}
-
-.thumbnails_2 .slick-current + .slick-slide {
-	opacity: 1;
-}
-
-.thumbnails_2 .slick-arrow {
-    top: 50%;
-    margin-top: -45px;
-}
-
-.thumbnails_2 .slick-prev {
-	transform: rotate(-180deg);
-	left: -45px;
-}
-
-.thumbnails_2 .slick-next {
-    right: 4px;
 }
 
 /*-- /Section 4 --*/
@@ -1024,7 +1005,7 @@ h1 {
 }
 
 .prices_thumbnails {
-    margin: 33px -10px 26px -10px;
+    margin: 33px 0 26px 0;
 }
 
 .h2_wrapp_3 h2 {
@@ -1047,6 +1028,14 @@ h1 {
     width: 6px;
     height: 6px;
     top: 9px;
+}
+
+.prices_thumbnails .owl-prev {
+    left: -20px;
+}
+
+.prices_thumbnails .owl-next {
+    right: -20px;
 }
 
 /*-- /Section 6 --*/
@@ -1502,27 +1491,20 @@ h1 {
 	    padding: 8px 0;
 	}
 
-	.thumbnails_2 .slick-next {
-	    right: 49px;
-	}
-
-	.thumbnails_2 .slick-prev {
-	    left: 4px;
-	}
-
-	.thumbnails_2 .slick-arrow {
-	    margin-top: -24px;
-	}
-
 	.thumbnails_2 .thumb_2 {
 	    width: 261px;
 	    height: 370px;
 	}
 
-	.slick-arrow {
-	    width: 15px;
-	    height: 25px;
-	}
+    .thumbnails_2 .owl-prev {
+        left: 0;
+        margin-top: -212px;
+    }
+
+    .thumbnails_2 .owl-next {
+        right: 43px;
+        margin-top: -212px;
+    }
 
 	/*-- /Section 4 --*/
 
@@ -1630,6 +1612,14 @@ h1 {
 	.sect_6 {
 	    padding: 56px 0 26px 0;
 	}
+
+    .prices_thumbnails .owl-prev {
+        left: -10px;
+    }
+
+    .prices_thumbnails .owl-next {
+        right: -2px;
+    }
 
 	/*-- Section 6 --*/
 
@@ -1956,9 +1946,33 @@ h1 {
 
 	/*-- Section 4 --*/
 
-	.thumbnails_2 .slick-current + .slick-slide {
-	    opacity: .5;
-	}
+
+    .thumbnails_2 .owl-item.active + .owl-item.active {
+        opacity: .5;
+        -webkit-transition-property: opacity;
+        -webkit-transition-duration: .3s;
+        -webkit-transition-timing-function: ease;
+
+        -moz-transition-property: opacity;
+        -moz-transition-duration: .3s;
+        -moz-transition-timing-function: ease;
+
+        -ms-transition-property: opacity;
+        -ms-transition-duration: .3s;
+        -ms-transition-timing-function: ease;
+
+        -o-transition-property: opacity;
+        -o-transition-duration: .3s;
+        -o-transition-timing-function: ease;
+
+        transition-property: opacity;
+        transition-duration: .3s;
+        transition-timing-function: ease;
+    }
+
+    .thumbnails_2 .owl-item.active  {
+        opacity: 1;
+    }
 
 	/*-- /Section 4 --*/
 
@@ -1974,10 +1988,41 @@ h1 {
 
 	/*-- /Section 5 --*/
 
-	.cherry_bg {
-		background-image: url(img/body_3_mob.jpg);
-	    background-size: cover;
-	}
+    /*-- Section 6 --*/
+
+    .cherry_bg {
+        background-image: url(img/body_3_mob.jpg);
+        background-size: cover;
+    }
+
+    .prices_thumbnails .owl-item.active + .owl-item.active {
+        opacity: .5;
+        -webkit-transition-property: opacity;
+        -webkit-transition-duration: .3s;
+        -webkit-transition-timing-function: ease;
+
+        -moz-transition-property: opacity;
+        -moz-transition-duration: .3s;
+        -moz-transition-timing-function: ease;
+
+        -ms-transition-property: opacity;
+        -ms-transition-duration: .3s;
+        -ms-transition-timing-function: ease;
+
+        -o-transition-property: opacity;
+        -o-transition-duration: .3s;
+        -o-transition-timing-function: ease;
+
+        transition-property: opacity;
+        transition-duration: .3s;
+        transition-timing-function: ease;
+    }
+
+    .prices_thumbnails .owl-item.active {
+        opacity: 1;
+    }
+
+    /*-- /Section 6 --*/
 
 	/*-- Footer --*/
 

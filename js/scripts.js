@@ -38,25 +38,22 @@ function getRightCoord() {
 
 function getMeetUsSlider() {
   if($(".thumbnails_2").length > 0) {
-    
-    $(".thumbnails_2").not(".slick-initialized").slick({
-      speed: 1200,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      mobileFirst: true,
-      infinite: true,
-      arrows: true,
-      variableWidth: true,
-      initialSlide: 1,
-      prevArrow: '<button class="slick-prev" aria-label="Previous" type="button"><img src="img/arrow_black_right.svg"></button>',
-      nextArrow: '<button class="slick-next" aria-label="Next" type="button"><img src="img/arrow_black_right.svg"></button>',
-      responsive: [
-          {
-              breakpoint: 900,
-              settings: "unslick"
-          }
-      ]
-    });
+    demo = $(".thumbnails_2");
+    if(bodyWidth >= 900) {
+       demo.owlCarousel('destroy');
+       demo.removeClass('owl-carousel');
+    } else {
+      demo.addClass('owl-carousel');
+      demo.owlCarousel({
+          loop:true,
+          margin:10,
+          dots: false,
+          nav: true,
+          responsiveClass:true,
+          autoWidth: true,
+          startPosition:1
+      });
+    }
     $(document).on('mouseenter', '.thumb_2', function() {
       $( this ).find(".thumb_2_text").slideDown(300);
     });
@@ -67,26 +64,24 @@ function getMeetUsSlider() {
 }
 
 function getPricesSlider() {
-    $(".prices_thumbnails").not(".slick-initialized").slick({
-      speed: 1200,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      mobileFirst: true,
-      infinite: true,
-      arrows: true,
-      variableWidth: true,
-      initialSlide: 3,
-      responsive: [
-          {
-              breakpoint: 720,
-              initialSlide: 1,
-          },
-          {
-              breakpoint: 1024,
-              settings: "unslick"
-          }
-      ]
-    });
+  if($(".prices_thumbnails").length > 0) {
+    pricesThumbnails = $(".prices_thumbnails");
+    if(bodyWidth >= 1024) {
+       pricesThumbnails.owlCarousel('destroy');
+       pricesThumbnails.removeClass('owl-carousel');
+    } else {
+      pricesThumbnails.addClass('owl-carousel');
+      pricesThumbnails.owlCarousel({
+          loop:true,
+          margin:20,
+          dots: false,
+          nav: true,
+          responsiveClass:true,
+          autoWidth: true,
+          startPosition:3
+      });
+    }
+  }
 }
 
 var w = window,
@@ -120,35 +115,59 @@ $(document).ready(function() {
   getSidebarPosition();
 
     if( $(".testimonial_slider").length > 0 ) {
-        $(".testimonial_slider").not(".slick-initialized").slick({
-            dots: false,
-            arrows: false,
-            // autoplay: true,
-            autoplaySpeed: 4000,
-            speed: 1200,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            prevArrow: '<button class="slick-prev" aria-label="Previous" type="button"><img src="img/arrow_red_right.svg"></button>',
-            nextArrow: '<button class="slick-next" aria-label="Next" type="button"><img src="img/arrow_red_right.svg"></button>',
-            responsive: [
-                {
-                  breakpoint: 1124,
-                  settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1
-                  }
+        // $(".testimonial_slider").not(".slick-initialized").slick({
+        //     dots: false,
+        //     arrows: false,
+        //     autoplaySpeed: 4000,
+        //     speed: 1200,
+        //     slidesToShow: 4,
+        //     slidesToScroll: 1,
+        //     prevArrow: '<button class="slick-prev" aria-label="Previous" type="button"><img src="img/arrow_red_right.svg"></button>',
+        //     nextArrow: '<button class="slick-next" aria-label="Next" type="button"><img src="img/arrow_red_right.svg"></button>',
+        //     responsive: [
+        //         {
+        //           breakpoint: 1124,
+        //           settings: {
+        //             slidesToShow: 3,
+        //             slidesToScroll: 1
+        //           }
+        //         },
+        //         {
+        //           breakpoint: 900,
+        //           settings: {
+        //             slidesToShow: 2,
+        //             slidesToScroll: 1,
+        //             variableWidth: true,
+        //             arrows: true
+        //           }
+        //         }
+        //       ]
+        // });
+
+        $('.testimonial_slider').owlCarousel({
+            loop:true,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
                 },
-                {
-                  breakpoint: 900,
-                  settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    variableWidth: true,
-                    arrows: true
-                  }
+                600:{
+                    items:2,
+                    nav:false
+                },
+                900:{
+                    items:3,
+                    nav:true,
+                    loop:false
+                },
+                1024:{
+                    items:4,
+                    nav:true,
+                    loop:false
                 }
-              ]
-        });
+            }
+        })
     }
 
     if( $(".benefits_slider").length > 0 ) {
