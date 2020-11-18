@@ -142,7 +142,6 @@ $(document).ready(function() {
 
       jQuery(".benefits_slider_wrapp").swipe({
          swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-           console.log(direction);
            if(direction == 'left') {
             $(".benefits_slider_arrows .slick-next").trigger("click");
            }
@@ -152,23 +151,25 @@ $(document).ready(function() {
          }
       });
 
-      // $(".benefits_slider_click").on("click", function(e) {
-      //   e.preventDefault();
-      //   parentBlock = $(this).closest(".benefits_slider_wrapp");
-      //   benefitsSliderNext = parentBlock.find(".slick-next").trigger("click");
-      // });
-
       $(".benefits_slider").not(".slick-initialized").slick({
           dots: true,
           arrows: true,
           // autoplay: true,
           autoplaySpeed: 4000,
-          speed: 1200,
+          speed: 800,
           slidesToShow: 1,
           slidesToScroll: 1,
           fade: true,
           appendDots: $(".benefits_slider_controls"),
-          appendArrows: $(".benefits_slider_arrows")
+          appendArrows: $(".benefits_slider_arrows"),
+          responsive: [
+              {
+                breakpoint: 900,
+                settings: {
+                  fade: false
+                }
+              }
+            ]
       });
     }
 
