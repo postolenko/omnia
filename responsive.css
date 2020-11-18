@@ -175,7 +175,7 @@
 }
 
 .slick-dots li button {
-    width: 44px;
+    width: 37px;
 }
 
 /*-- /Section 3 --*/
@@ -1983,6 +1983,14 @@ h1 {
 	.benefits_slider_arrows .slick-arrow {
 	    margin-top: -93px;
 	}
+
+    .slick-dots li {
+        margin: 4px 7px;
+    }
+
+    .slick-dots li button {
+        width: 16px;
+    }
 
 	/*-- /Section 3 --*/
 

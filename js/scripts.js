@@ -140,17 +140,27 @@ $(document).ready(function() {
 
     if( $(".benefits_slider").length > 0 ) {
 
+      $(".benefits_slider_click").on("click", function(e) {
+        if(bodyWidth > 768) {
+            e.preventDefault();
+          $(".benefits_slider_arrows .slick-next").trigger("click");
+        }
+      });
+
       jQuery(".benefits_slider_wrapp").swipe({
          swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-           if(direction == 'left') {
-            $(".benefits_slider_arrows .slick-next").trigger("click");
-           }
-           if(direction == 'right') {
-            $(".benefits_slider_arrows .slick-prev").trigger("click");
-           }
+          if(bodyWidth <= 768) {
+             if(direction == 'left' ) {
+                $(".benefits_slider_arrows .slick-next").trigger("click");
+             }
+             if(direction == 'right') {
+                $(".benefits_slider_arrows .slick-prev").trigger("click");
+             }
+          }
          },
          threshold:5
       });
+
 
       $(".benefits_slider").not(".slick-initialized").slick({
           dots: true,
