@@ -148,7 +148,8 @@ $(document).ready(function() {
            if(direction == 'right') {
             $(".benefits_slider_arrows .slick-prev").trigger("click");
            }
-         }
+         },
+         threshold:5
       });
 
       $(".benefits_slider").not(".slick-initialized").slick({
